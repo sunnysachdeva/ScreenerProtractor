@@ -39,5 +39,8 @@ exports.config = {
 
 		onPrepare: function() {
 			jasmine.getEnv().addReporter(reporter);
+			browser.driver.manage().window().maximize();
+			browser.get('https://www.screener.in/');
+			browser.waitForAngular();
 		}
 };

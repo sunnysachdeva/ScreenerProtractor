@@ -16,8 +16,13 @@ var GenericMethods=function(){
 		return element.getAttribute(value);
 	};
 	
-	this.clickFirstElement=functions(items){
+	this.clickFirstElement=function(items){
 		items.first().click();
+		
+	};
+	
+	this.IsElementPresent=function(element){
+		return element.isPresent();
 	};
 };
 
